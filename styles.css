@@ -18,6 +18,23 @@ body {
     box-sizing: border-box;
 }
 
+a:link {
+    color: whitesmoke;
+}
+
+a:visited {
+    color: whitesmoke;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: whitesmoke;
+}
+
+/* Nav Section */
 nav {
     display: flex;
     justify-content: space-around;
@@ -70,21 +87,7 @@ a {
     transition: color 0.2s ease-in;
 }
 
-a:link {
-    color: whitesmoke;
-}
 
-a:visited {
-    color: whitesmoke;
-}
-
-a:hover {
-    color: white;
-}
-
-a:active {
-    color: whitesmoke;
-}
 
 @media screen and (max-width: 1200px) {
 
@@ -151,7 +154,7 @@ a:active {
     transform: rotate(45deg) translate(-0.25rem, -0.3rem);
 }
 
-/*
+/* Banner section */
 .banner {
     display: flex;
     flex-direction: column;
@@ -161,14 +164,17 @@ a:active {
     height: 25rem;
     min-width: 100%;
     text-align: center;
-    background-color: black;
-    background-image: url(./Assets/Images/tim-swaan-eOpewngf68w-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
     padding: 0;
     margin: 0 -0.5rem 0 -0.5rem;
     position: static;
+}
+
+#index-banner {
+    background-image: url(./Assets/Images/tim-swaan-eOpewngf68w-unsplash.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
 }
 
 .title {
@@ -184,12 +190,30 @@ a:active {
 
 .title h1 {
     font-family: 'fira code', sans-serif;
-    font-size: 3rem;
-    margin-bottom: -2rem;
+    font-size: 1.8rem;
+    margin-bottom: -1.5rem;
 }
 
 .title h3 {
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
-*/
+
+.title span {
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.title span.fade {
+    opacity: 1;
+}
+
+.title .fancy3 span {
+    opacity: 0;
+    transition: all 2s ease;
+    transition-delay: 1.5s;
+}
+
+.title .fancy3 span.fade3 {
+    opacity: 1;
+}
