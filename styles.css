@@ -430,6 +430,9 @@ a {
     box-shadow: 0rem 0.3rem 0.15rem rgba(0, 0, 0, 0.2);
     padding: 0;
 }
+.index-contact .icon-list li{
+    padding: 0.25rem;
+}
 #contact-link {
     text-decoration: underline;
 }
