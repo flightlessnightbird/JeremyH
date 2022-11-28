@@ -135,6 +135,7 @@ a {
     transform: rotate(45deg) translate(-0.25rem, -0.3rem);
 }
 /* Banner section */
+
 .banner {
     display: flex;
     flex-direction: column;
@@ -145,14 +146,15 @@ a {
     min-width: 100%;
     text-align: center;
     padding: 0;
-    margin: 0 -0.5rem 0 -0.5rem;
+    margin: 0;
     position: static;
+    overflow: hidden;
 }
 #index-banner {
     background-image: url(./Assets/Images/tim-swaan-eOpewngf68w-unsplash.jpg);
     background-color: black;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
 }
 .title {
