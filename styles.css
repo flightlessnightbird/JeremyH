@@ -457,6 +457,7 @@ footer {
     height: 8vh;
     background-color: black;
     padding: 0;
+    margin: 0;
 }
 footer h4 {
     font-weight: 300;
