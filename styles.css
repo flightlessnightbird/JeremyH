@@ -270,8 +270,15 @@ a {
     list-style: none;
     margin-right: 0.25rem;
 }
-#pong-game {
-    display: none;
+@media (pointer: coarse){
+    #pong-game {
+        display: none;
+    }
+}
+@media (pointer: none) {
+    #pong-game {
+        display: none;
+    }
 }
 @media screen and (max-width: 1200px) {
     .about {
